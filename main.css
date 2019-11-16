@@ -1,0 +1,197 @@
+html,
+body {
+  animation: fadein 2s;
+  height: 100%;
+  background-color: black;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  min-height: 100%;
+}
+
+nav {
+}
+
+section {
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+i {
+  color: black;
+}
+.sectionContainer i {
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: black url("./nosebluntti.jpg") no-repeat;
+  background-position: 50% 60%;
+  background-size: none;
+  height: 100vh;
+  width: auto;
+}
+.sectionContainer {
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  background-color: transparent;
+  color: whitesmoke;
+}
+#navbar {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.header {
+  background-color: black;
+  padding: 0px;
+  text-align: center;
+}
+#navbarPlaceHolder {
+  display: none;
+  height: 7vh;
+  widows: 100vh;
+}
+.navDecoration {
+  width: 90%;
+  border-bottom: 2px #333 solid;
+  margin-left: 5%;
+}
+.navContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 7vh;
+  margin: 0 5% 0 5%;
+}
+.navContainer a {
+  display: block;
+  color: whitesmoke;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navContainer a:active {
+  display: block;
+  color: #444;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.space {
+  height: 60vh;
+}
+.quote {
+  align-self: center;
+  font: italic 25px/1 Courier New, monospace;
+  opacity: 0.8;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  flex-shrink: 0;
+}
+
+@media screen and (max-device-width: 900px) {
+  .container {
+    background-position: 50% 45%;
+  }
+  .space {
+    height: 45vh;
+  }
+  .quote {
+    font: italic 35px/1 Courier, monospace;
+  }
+}
+#someOne {
+  margin: 0 0 0 0;
+  transition: margin 2s ;
+}
+
+#someOne.someslideone {
+  margin: 0 0 0 15vw;
+
+}
+
+#someTwo {
+  margin: 0 0 0 0;
+  transition: margin 2s ;
+
+}
+
+#someTwo.someslidetwo {
+  margin: 0 0 0 15vw;
+
+}
+
+#someThree {
+  margin: 0 0 0 0;
+  transition: margin 2s ;
+
+}
+
+#someThree.someslidethree{
+  margin: 0 0 0 15vw;
+}
+
+#some {
+  margin: 0 5% 0 5%;
+  display: flex;
+  opacity: 0.1;
+  margin: 0 0 0 10px;
+  transition: opacity 3s 2s, margin 2s , transform 2s;
+  
+}
+#some.someslide {
+  margin: 0 0 0 100px;
+  opacity: 1;
+}
+
+#copyright {
+  margin: 10px;
+  opacity: 0.4;
+  font-size: 15px;
+  color: #333;
+}

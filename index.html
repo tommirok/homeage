@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tommi Rokolampi</title>
+  <meta charset="utf-8" />
+
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body class="container">
+  <div class="header">
+    <h2>Scroll Down</h2>
+    <p>Scroll down to see the sticky effect.</p>
+  </div>
+
+  <div id="navbar">
+    <nav class="navContainer">
+      <a href="/index.html">index</a>
+      <a href="/index.html">my "shit emoji"</a>
+      <a href="/index.html">resume</a>
+    </nav>
+    <div class="navDecoration"></div>
+  </div>
+  <div id="navbarPlaceHolder">
+    <nav class="navContainer">
+
+    </nav>
+    <div></div>
+  </div>
+
+
+  <section class="sectionContainer">
+    <div class="space"></div>
+    <article class="quote">
+      <p>” My passion is expressing my self</p>
+      <p>throughout actions I make and projects I develop.</p>
+      <p>I think its the source of doing things right,</p>
+      <p>in life | in work | in hobbies ”</p>
+      ~Señor Visioner
+    </article>
+  </section>
+
+  <footer class="footer">
+    <div id="some">
+      <a id="someOne" href="https://github.com/tommirok?tab=repositories"> <i class="fa fa-github fa-3x"></i></a>
+      <a id="someTwo" href="https://www.linkedin.com/in/tommi-rokolampi-4b1464111/"> <i class="fa fa-linkedin fa-3x"></i></a>
+      <a id="someThree" href="https://www.instagram.com/tommiroko/"><i class="fa fa-instagram fa-3x"></i></a>
+    </div>
+    <p id="copyright">&copy;2017 Tommi Rokolampi all rights are deserved</p>
+  </footer>
+
+  <script>
+
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var navbarph = document.getElementById("navbarPlaceHolder");
+    var sticky = navbar.offsetTop;
+    var some = document.getElementById("some")
+    var some1 = document.getElementById("someOne")
+    var some2 = document.getElementById("someTwo")
+    var some3 = document.getElementById("someThree")
+    var footer = document.getElementsByClassName("footer")
+    var footeroffset = footer.offsetTop
+    var body = document.body,
+      html = document.documentElement;
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+      html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        navbarph.style.display = "block"
+
+      } else {
+        navbar.classList.remove("sticky");
+        navbarph.style.display = "none"
+      }
+      if (window.scrollY >= 400) {
+        console.log("trgiiered")
+        some.classList.add("someslide")
+        some1.classList.add("someslideone")
+        some2.classList.add("someslidetwo")
+        some3.classList.add("someslidethree")
+      } else {
+        some.classList.remove("someslide")
+        some1.classList.remove("someslideone")
+        some2.classList.remove("someslidetwo")
+        some3.classList.remove("someslidethree")
+
+      }
+    }
+
+   
+  </script>
+
+</body>
+
+</html>
