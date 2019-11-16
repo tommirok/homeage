@@ -89,7 +89,7 @@ i {
 }
 .navContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   align-items: center;
   height: 7vh;
   margin: 0 5% 0 5%;
@@ -144,36 +144,41 @@ i {
   .quote {
     font: italic 35px/1 Courier, monospace;
   }
+  .navContainer {
+    justify-content: flex-end;
+  }
+  .navContainer a {
+    font-size: 24px;
+  }
 }
 #someOne {
   margin: 0 0 0 0;
-  transition: margin 2s ;
+  transition: margin 2s, transform 2s;
 }
 
 #someOne.someslideone {
   margin: 0 0 0 15vw;
-
+  transform: rotate(360deg);
 }
 
 #someTwo {
   margin: 0 0 0 0;
-  transition: margin 2s ;
-
+  transition: margin 2s, transform 2s;
 }
 
 #someTwo.someslidetwo {
   margin: 0 0 0 15vw;
-
+  transform: rotate(360deg);
 }
 
 #someThree {
   margin: 0 0 0 0;
-  transition: margin 2s ;
-
+  transition: margin 2s, transform 2s;
 }
 
-#someThree.someslidethree{
+#someThree.someslidethree {
   margin: 0 0 0 15vw;
+  transform: rotate(360deg);
 }
 
 #some {
@@ -181,8 +186,7 @@ i {
   display: flex;
   opacity: 0.1;
   margin: 0 0 0 10px;
-  transition: opacity 3s 2s, margin 2s , transform 2s;
-  
+  transition: opacity 1s 2s, margin 2s, transform 2s;
 }
 #some.someslide {
   margin: 0 0 0 100px;
