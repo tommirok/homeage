@@ -8,12 +8,13 @@
 
   <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
+
 </head>
 
-<body class="container">
+<body class="resumecontainer">
   <div class="header">
     <h2>Scroll Down</h2>
     <p>Scroll down to see the sticky effect.</p>
@@ -21,10 +22,11 @@
 
   <div id="navbar">
     <nav class="navContainer">
-      <a id="active" href="http://users.metropolia.fi/~tommirok">index</a>
-      <a href="rhttp://users.metropolia.fi/~tommirok">my <i class="fas fa-poo"></i> (not available)</a>
-      <a href="http://users.metropolia.fi/~tommirok/resume.html">resume</a>
+      <a href="http://users.metropolia.fi/~tommirok">index</a>
+      <a href="http://users.metropolia.fi/~tommirok">my <i class="fas fa-poop"></i></a>
+      <a id="active" href="http://users.metropolia.fi/~tommirok/resume.html">resume</a>
     </nav>
+
     <div class="navDecoration"></div>
   </div>
   <div id="navbarPlaceHolder">
@@ -34,17 +36,15 @@
     <div></div>
   </div>
 
-
   <section class="sectionContainer">
-    <div class="space"></div>
-    <article class="quote">
-      <p>” My passion is expressing my self</p>
-      <p>throughout actions I make and projects I develop.</p>
-      <p>I think its the source of doing things right,</p>
-      <p>in life | in work | in hobbies ”</p>
-      ~Señor Visioner
-    </article>
+    <div class="resumespace"></div>
+    <form method="post" action="download.php">
+      <input name="password" type="password" id="password" placeholder="password" required>
+      <input class="button" type="submit" name="submit" value="get resume">
+      <form />
   </section>
+
+
 
   <footer class="footer">
     <div id="some">
@@ -101,6 +101,7 @@
 
 
   </script>
+ 
 
 </body>
 

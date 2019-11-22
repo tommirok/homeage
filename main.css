@@ -42,6 +42,9 @@ a {
 i {
   color: black;
 }
+.navContainer i{
+  color: rgb(92, 55, 21);
+}
 .sectionContainer i {
   color: white;
 }
@@ -55,6 +58,7 @@ i {
   height: 100vh;
   width: auto;
 }
+
 .sectionContainer {
   flex: 1 0 auto;
   flex-direction: column;
@@ -134,12 +138,111 @@ i {
   flex-shrink: 0;
 }
 
+
+#someOne {
+  margin: 400px 0 0 0;
+  transition: margin 3s, transform 2s;
+}
+
+#someOne.someslideone {
+  margin: 0 0 0 0;
+  transform: rotate(360deg);
+}
+
+#someTwo {
+  margin: 0 0 0 0;
+  transition: margin 2s, transform 2s;
+}
+
+#someTwo.someslidetwo {
+  margin: 0 10vw 0 10vw;
+  transform: rotate(360deg);
+}
+
+#someThree {
+  margin: 0 0 0 0;
+  transition: margin 2s, transform 2s;
+}
+
+#someThree.someslidethree {
+  margin: 0 0 0 0w;
+  transform: rotate(360deg);
+}
+
+#some {
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.0;
+  
+  transition: opacity 2s, transform 1s;
+}
+#some.someslide {
+  opacity: 1;
+}
+
+#copyright {
+  margin: 50px;
+  opacity: 0.4;
+  font-size: 15px;
+  color: #333;
+  align-self: center;
+  justify-self: flex-end;
+}
+#active{
+  color: #444
+}
+
+/* resume */
+
+
+.resumecontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: black url("./indy.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 50vw 70vh;  
+  height: 100vh;
+  width: auto;
+}
+.button{
+  background-color:rgb(25, 114, 136);
+  height: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  color: whitesmoke;
+  border: none;
+  text-align: center;
+  
+}
+
+#password{
+  height: 40px;
+  font-size: 30px;
+  width: 40vw;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+.resumespace{
+  height: 65vh;
+}
 @media screen and (max-device-width: 900px) {
   .container {
     background-position: 50% 45%;
   }
+  .resumecontainer {
+    background-size: 100vw 70vh;  
+  }
   .space {
     height: 45vh;
+  }
+  .resumespace {
+    height: 80vh;
   }
   .quote {
     font: italic 35px/1 Courier, monospace;
@@ -150,52 +253,8 @@ i {
   .navContainer a {
     font-size: 24px;
   }
-}
-#someOne {
-  margin: 0 0 0 0;
-  transition: margin 2s, transform 2s;
-}
+  .footer {
+    height: 20vh;
 
-#someOne.someslideone {
-  margin: 0 0 0 15vw;
-  transform: rotate(360deg);
-}
-
-#someTwo {
-  margin: 0 0 0 0;
-  transition: margin 2s, transform 2s;
-}
-
-#someTwo.someslidetwo {
-  margin: 0 0 0 15vw;
-  transform: rotate(360deg);
-}
-
-#someThree {
-  margin: 0 0 0 0;
-  transition: margin 2s, transform 2s;
-}
-
-#someThree.someslidethree {
-  margin: 0 0 0 15vw;
-  transform: rotate(360deg);
-}
-
-#some {
-  margin: 0 5% 0 5%;
-  display: flex;
-  opacity: 0.1;
-  margin: 0 0 0 10px;
-  transition: opacity 1s 2s, margin 2s, transform 2s;
-}
-#some.someslide {
-  margin: 0 0 0 100px;
-  opacity: 1;
-}
-
-#copyright {
-  margin: 10px;
-  opacity: 0.4;
-  font-size: 15px;
-  color: #333;
+  }
 }
