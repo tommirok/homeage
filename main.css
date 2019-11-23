@@ -43,7 +43,7 @@ i {
   color: black;
 }
 .navContainer i{
-  color: rgb(92, 55, 21);
+  color: rgb(94, 65, 38);
 }
 .sectionContainer i {
   color: white;
@@ -61,25 +61,23 @@ i {
 
 .sectionContainer {
   flex: 1 0 auto;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding-left: 10vw;
   padding-right: 10vw;
-  display: flex;
   background-color: transparent;
   color: whitesmoke;
 }
 #navbar {
   background-color: black;
   opacity: 0.7;
+  
 }
 
 .header {
   background-color: black;
-  padding: 0px;
-  text-align: center;
+  margin:0 0 0 0;
 }
 #navbarPlaceHolder {
   display: none;
@@ -106,13 +104,11 @@ i {
   font-size: 17px;
 }
 .navContainer a:active {
-  display: block;
-  color: #444;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 17px;
+    color: #444;
+
 }
 .space {
+  flex:2;
   height: 60vh;
 }
 .quote {
@@ -131,7 +127,7 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   background-color: whitesmoke;
   color: black;
@@ -197,52 +193,91 @@ i {
 
 
 .resumecontainer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background: black url("./indy.jpg") no-repeat;
+
+  background: whitesmoke url("./slassi.jpg") no-repeat;
   background-position: bottom;
-  background-size: 50vw 70vh;  
-  height: 100vh;
-  width: auto;
+  background-size: 1400px;  
 }
 .button{
-  background-color:rgb(25, 114, 136);
+  flex:3;
+  background-color: rgb(88, 146, 255);
   height: 50px;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 10px;
-  color: whitesmoke;
-  border: none;
   text-align: center;
-  
+  margin: 10px 0 0 0;
+  border: 2px #444 solid;
+  color: #222;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px;
+  opacity: 0.7;
+
+}
+
+.form{
+  position: relative;
+  top:25vh;
+  height:auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+}
+.iphone{
+  height: 80vh;
+  width: auto;
+  margin: 0 0 0 0;
+  background: transparent url(./emptyiphone.png) no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #password{
+  flex:1;
   height: 40px;
-  font-size: 30px;
-  width: 40vw;
-  background-color: whitesmoke;
-  opacity: 0.8;
+  font-size: 20px;
+  background-color: transparent;
   border-radius: 10px;
-  border: none;
+  border: 2px #444 solid;
   padding: 5px;
   text-align: center;
+  box-shadow: 5px 5px #444;
 }
 .resumespace{
-  height: 65vh;
+  height: 2vh;
 }
 @media screen and (max-device-width: 900px) {
+  .form{
+   
+    top:26vh;
+  }
+  .button{
+    margin: 30px 0 0 0;
+    font-size: 40px;
+  }
+  #password{
+    font-size: 40px;
+
+  }
+  .iphone{
+    margin: 0 0 5vh 0;
+  }
   .container {
     background-position: 50% 45%;
   }
   .resumecontainer {
+   
     background-size: 100vw 70vh;  
   }
   .space {
     height: 45vh;
   }
   .resumespace {
-    height: 80vh;
+    height: 20vh;
   }
   .quote {
     font: italic 35px/1 Courier, monospace;
