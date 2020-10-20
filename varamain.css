@@ -1,114 +1,305 @@
+html,
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  animation: fadein 3s;
+  height: 100%;
+  background-color: black;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-a:hover, a:active, a:visited, a:link, a {
+@keyframes fadein {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  min-height: 100%;
+}
+
+nav {
+}
+
+section {
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+i {
   color: black;
-	text-decoration: solid;
 }
-
-header {
-  padding: 20px 0;
+.navContainer i{
+  color: rgb(94, 65, 38);
 }
-
-header .row,
-footer .row {
+.sectionContainer i {
+  color: white;
+}
+.container {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  background: black url("./nosebluntti.jpg") no-repeat;
+  background-position: 50% 60%;
+  background-size: none;
+  height: 100vh;
+  width: auto;
+}
+
+.sectionContainer {
+  flex: 1 0 auto;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: transparent;
+  color: whitesmoke;
+  margin: 0 0 0 -50px;
+}
+#navbar {
+  background-color: black;
+  opacity: 0.7;
+  
 }
 
-header h1 {
-  font-weight: 700;
-  margin: 0;
+.header {
+  background-color: black;
+  margin:0 0 0 0;
 }
-
-header nav {
+#navbarPlaceHolder {
+  display: none;
+  height: 7vh;
+  widows: 100vh;
+}
+.navDecoration {
+  width: 90%;
+  border-bottom: 2px #333 solid;
+  margin-left: 5%;
+}
+.navContainer {
   display: flex;
-  justify-content: flex-end;
-}
-
-header p {
-  padding: 0 20px;
-  margin: 0;
-}
-
-.container li{
-font-size: 2em;
-
-}
-
-table {
-border:1px solid black;
-}
-
-.jumbotron {
-  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  background-image: url('./nosebluntti.jpg');
-  background-size: cover;
-  color: #ffffff;
-  height: 80vh;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
+  height: 7vh;
+  margin: 0 5% 0 5%;
+}
+.navContainer a {
+  display: block;
+  color: whitesmoke;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navContainer a:active {
+    color: #444;
+
+}
+.space {
+  flex:2;
+  height: 60vh;
+}
+.quote {
+  align-self: center;
+  font: italic 25px/1 Courier New, monospace;
+  opacity: 0.8;
 }
 
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
-
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
-}
-
-section .row img {
-  margin: 0 0 30px;
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
-}
-
-footer {
-  font-size: 12px;
-  padding: 20px 0;
-}
-
-footer .col-sm-8 {
+.footer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
+  width: 100%;
+  filter: grayscale(100%);
+  background: whitesmoke url("./beach.jpg") no-repeat;
+  background-size: 100vw 30vh;
+  color: black;
+  flex-shrink: 0;
+  margin: 0 0 0 0;
 }
 
-footer ul {
-  list-style: none;
+
+#someOne {
+
+  margin: 400px 0 0 0;
+  transition: margin 3s, transform 2s;
 }
 
-footer li img {
-  width: 32px;
-  height: 32px;
+#someOne.someslideone {
+  margin: 0 0 0 0;
+  transform: rotate(360deg);
 }
-ul {
-  list-style-type: none;
+
+#someTwo {
+  margin: 0 0 0 0;
+  transition: margin 2s, transform 2s;
+}
+
+#someTwo.someslidetwo {
+  margin: 0 10vw 0 10vw;
+  transform: rotate(360deg);
+}
+
+#someThree {
+  margin: 0 0 0 0;
+  transition: margin 2s, transform 2s;
+}
+
+#someThree.someslidethree {
+  margin: 0 0 0 0w;
+  transform: rotate(360deg);
+}
+
+#some {
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: center;
+  opacity: 0.0;
+  
+  transition: opacity 2s, transform 1s;
+}
+#some.someslide {
+  opacity: 1;
+}
+
+#copyright {
+  margin: 20px;
+  opacity: 0.9;
+  font-size: 15px;
+  color: #111;
+  align-self: center;
+  justify-self: flex-end;
+}
+#active{
+  color: #444
+}
+
+/* resume */
+
+.resumecontainer {
+
+  background: whitesmoke url("./slassi_tuned.jpg") no-repeat;
+  background-position: bottom;
+  background-size: 1000px 100%;  
+}
+.button{
+  flex:3;
+  background-color: rgb(126, 126, 126);
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  border: 2px #444 solid;
+  color: #222;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px;
+  opacity: 0.7;
+
+}
+
+.form{
+  position: relative;
+  top:25vh;
+  height:auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+}
+.iphone{
+  height: 80vh;
+  width: auto;
+  margin: 0 0 0 0;
+  background: transparent url(./emptyiphone.png) no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#password{
+  flex:1;
+  height: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px #444 solid;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px #444;
+  color: white
+  
+}
+::placeholder{
+  color: whitesmoke;
+}
+
+.resumespace{
+  height: 2vh;
+}
+@media screen and (max-device-width: 900px) {
+  .form{
+   
+    top:26vh;
+  }
+  .button{
+    margin: 30px 0 0 0;
+    font-size: 40px;
+  }
+  #password{
+    font-size: 40px;
+
+  }
+  .iphone{
+    margin: 0 0 5vh 0;
+  }
+  .container {
+    background-position: 50% 45%;
+  }
+  .resumecontainer {
+   
+    background-size: 100vw 70vh;  
+  }
+  .space {
+    height: 45vh;
+  }
+  .resumespace {
+    height: 18vh;
+  }
+  .quote {
+    font: italic 35px/1 Courier, monospace;
+  }
+  .navContainer {
+    justify-content: flex-end;
+  }
+  .navContainer a {
+    font-size: 24px;
+  }
+  .footer {
+    height: 20vh;
+
+  }
 }

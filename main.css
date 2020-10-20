@@ -1,6 +1,6 @@
 html,
 body {
-  animation: fadein 2s;
+  animation: fadein 3s;
   height: 100%;
   background-color: black;
   font-size: 27px;
@@ -68,6 +68,7 @@ i {
   padding-right: 10vw;
   background-color: transparent;
   color: whitesmoke;
+  margin: 0 0 0 -50px;
 }
 #navbar {
   background-color: black;
@@ -127,15 +128,19 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20vh;
+  height: 30vh;
   width: 100%;
-  background-color: whitesmoke;
+  filter: grayscale(100%);
+  background: whitesmoke url("./beach.jpg") no-repeat;
+  background-size: 100vw 30vh;
   color: black;
   flex-shrink: 0;
+  margin: 0 0 0 0;
 }
 
 
 #someOne {
+
   margin: 400px 0 0 0;
   transition: margin 3s, transform 2s;
 }
@@ -178,10 +183,10 @@ i {
 }
 
 #copyright {
-  margin: 50px;
-  opacity: 0.4;
+  margin: 20px;
+  opacity: 0.9;
   font-size: 15px;
-  color: #333;
+  color: #111;
   align-self: center;
   justify-self: flex-end;
 }
@@ -191,16 +196,15 @@ i {
 
 /* resume */
 
-
 .resumecontainer {
 
-  background: whitesmoke url("./slassi.jpg") no-repeat;
+  background: whitesmoke url("./slassi_tuned.jpg") no-repeat;
   background-position: bottom;
-  background-size: 1400px;  
+  background-size: 1000px 100%;  
 }
 .button{
   flex:3;
-  background-color: rgb(88, 146, 255);
+  background-color: rgb(126, 126, 126);
   height: 50px;
   font-size: 20px;
   border-radius: 10px;
@@ -246,7 +250,13 @@ i {
   padding: 5px;
   text-align: center;
   box-shadow: 5px 5px #444;
+  color: white
+  
 }
+::placeholder{
+  color: whitesmoke;
+}
+
 .resumespace{
   height: 2vh;
 }
@@ -277,7 +287,7 @@ i {
     height: 45vh;
   }
   .resumespace {
-    height: 20vh;
+    height: 18vh;
   }
   .quote {
     font: italic 35px/1 Courier, monospace;

@@ -24,9 +24,7 @@ function Request(args) {
       }
     });
   }())
-  
 }
-
 Request({ uriEnd: "someapi", val1: "5" })
   .then(resp => {
     console.log(resp);

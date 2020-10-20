@@ -7,9 +7,9 @@
           $valid_pw = md5("J01ku");
 
           if($pw != $valid_pw){
-               echo "Error! You do not have access to this file";
+               echo "Error! You do not have access to this file ";
           }else{
-               header("Location: assets/CV (updated).docx");
+               header("Location: CV (updated).pdf");
           }
 
 ?>
