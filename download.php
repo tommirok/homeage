@@ -9,7 +9,7 @@
           if($pw != $valid_pw){
                echo "Error! You do not have access to this file";
           }else{
-               header("Location: CV (updated).docx");
+               header("Location: assets/CV (updated).docx");
           }
 
 ?>
