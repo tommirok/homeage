@@ -1,9 +1,12 @@
+
+
 html,
 body {
-  animation: fadein 3s;
-  height: 100%;
-  background-color: black;
+  animation: fadein 2s;
+  height: 150%;
   font-size: 27px;
+  z-index: -100;
+  background-color: black;
   font-weight: 400;
   letter-spacing: 3px;
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
@@ -13,7 +16,8 @@ body {
 }
 @keyframes fadein {
   from {
-    opacity: 0.2;
+
+    opacity: 0.3;
   }
   to {
     opacity: 1;
@@ -60,6 +64,7 @@ i {
 }
 
 .sectionContainer {
+  animation: fadein 2s;
   flex: 1 0 auto;
   justify-content: center;
   align-items: center;
@@ -131,7 +136,7 @@ i {
   height: 30vh;
   width: 100%;
   filter: grayscale(100%);
-  background: whitesmoke url("./beach.jpg") no-repeat;
+  background: black url("./beach.jpg") no-repeat;
   background-size: 100vw 30vh;
   color: black;
   flex-shrink: 0;
@@ -229,7 +234,7 @@ i {
 
 }
 .iphone{
-  height: 80vh;
+  height: 90%;
   width: auto;
   margin: 0 0 0 0;
   background: transparent url(./emptyiphone.png) no-repeat center;
